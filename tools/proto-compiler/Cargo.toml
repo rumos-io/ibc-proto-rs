@@ -8,9 +8,9 @@ rust-version = "1.60"
 
 [dependencies]
 git2        = "0.17"
-prost-build = "0.11"
+prost-build = "0.13"
 walkdir     = "2.3"
 argh        = "0.1"
-tonic       = "0.9"
-tonic-build = "0.9"
+tonic       = "0.12"
+tonic-build = "0.12"
 similar     = "2.2"

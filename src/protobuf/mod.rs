@@ -194,6 +194,7 @@ mod test {
 
     #[test]
     fn test_protobuf_blanket_impls() {
+        #[allow(dead_code)]
         trait Foo: Protobuf<Any, Error = Error> {}
 
         #[derive(Clone)]

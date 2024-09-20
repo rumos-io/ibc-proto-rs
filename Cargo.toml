@@ -28,13 +28,13 @@ doctest = false
 all-features = true
 
 [dependencies]
-prost           = { version = "0.11", default-features = false }
+prost           = { version = "0.13", default-features = false }
 bytes           = { version = "1.2",  default-features = false }
-tonic           = { version = "0.9",  default-features = false, optional = true }
+tonic           = { version = "0.12",  default-features = false, optional = true }
 serde           = { version = "1.0",  default-features = false }
 schemars        = { version = "0.8",  optional = true }
 subtle-encoding = { version = "0.5",  default-features = false }
-base64          = { version = "0.21", default-features = false, features = ["alloc"] }
+base64          = { version = "0.22", default-features = false, features = ["alloc"] }
 flex-error      = { version = "0.4",  default-features = false }
 
 ## for codec encode or decode
@@ -46,11 +46,12 @@ scale-info         = { version = "2.1.2", default-features = false, features = [
 borsh = { version = "0.9", default-features = false, optional = true }
 
 [dependencies.ics23]
-version          = "0.10.1"
+version          = "0.12"
 default-features = false
 
 [dependencies.tendermint-proto]
-version          = "0.33"
+git = "https://github.com/rumos-io/tendermint-rs"
+branch = "v0.29.x"
 default-features = false
 
 [features]
